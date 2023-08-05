@@ -6,7 +6,7 @@
     --gris: #e1e1e1;
     --blanco: #ffffff;
     --negro: #000000;
-    --verde: #9EEB47
+    --verde: #afc126;
 }
 html {
     box-sizing: border-box;
@@ -28,6 +28,7 @@ header {
 }
 main {
     margin-top: 150px;
+    display: block;
 }
 /* Globales */
 .contenedor {
@@ -108,17 +109,44 @@ nav > ul > li> a {
     color: #365F3D;
     padding: 8px 25px;
     border-radius: 100px;
-    border: solid 1.5px #365F3D;}
+    border: solid 1.5px #365F3D;
+}
+.buttons-section > ul > li > a{
+    background: transparent;
+    color: #365F3D;
+    padding: 8px 25px;
+    border-radius: 100px;
+    border: solid 1.5px #365F3D;
+    justify-content: flex-end;
+    width: auto;
+
+}
+.buttons-section > ul{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    @media (max-width: 1000px){
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+}
 
 .Tienda{
     background-color: #365F3D;
     color: black;
 }
+#reserva-brunch{
+    background-color: #365F3D;
+    color: white;
+    
+}
 .conteiner{
     width: 100%;
     padding-right: 15px;
     padding-left: 15px;
-    margin: 0 auto;
 }
 .seccion-imagen{
     background-color: blanchedalmond;
@@ -147,70 +175,118 @@ nav > ul > li> a {
     text-align: center;
     width: 50%;
     color: #e1e1e1;
-}
-.maxi{
-    color:rgb(155, 135, 105); ;
-    font-size: 20px;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 21px;
+@media (max-width: 1000px){
+    font-size: 15px;
+    line-height: 19px;
+    width: 80%;
 }
 
+}
+.maxi{
+    color:#AFC126; 
+    font-size: 20px;
+}
+.conteiner-imagen{
+    @media (max-width:1000px){
+        padding: 0px 0px 0px 0px;
+        max-width: 100%; /* La imagen no se extenderá más allá del ancho del contenedor */
+        height: auto; /* La altura se ajustará automáticamente según el ancho */    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+ 
+     }
+
+}
 .imagen{
     border-radius: 35px 35px 35px 35px;
-    height: 40rem;
+    max-width: 100%;
+    @media (min-width: 1000px){
+        height: 40rem;
+    }
+    
+    
+    
 }
  .textos{
+
     text-align: center;
     color: black;
     font-family: "Roboto", Sans-serif;
     font-size: 18px;
     font-weight: 300;
     line-height: 21px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+
+
+    
 }
+.textos-2{
+    color: black;
+    font-family: "Roboto", Sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 21px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
  .cards-title{
     color: #365F3D;
     font-family: "Archive Atlantique", Sans-serif;
     font-size: 27px;
     font-weight: 500;
     line-height: 26px;
-    text-align: left;
-    width: 100%;
-    max-width: 100%;
+    @media (max-width:1000px){
+       text-align: center;
+
+    }
 }
  .cards-text{
     text-align: left;
     color: #365F3D;
     font-family: "Roboto", Sans-serif;
+    width: 70%;
+    @media (max-width:1000px){
+        margin: 0 auto;
+        display: block;
+        text-align: center;
+
+
+    }
+    
  }
 .cards-section {
     margin-top: 50px;
-    margin-bottom: 0;
-    position: relative;
-    box-sizing: border-box;
-    display: block;
+    margin-bottom: 0;   
 }
 .cards-conteiner {
-    display: flex;
-    margin-right: auto;
-    margin-left: auto;
-    position: relative;
-    margin-left: 150px;
-    margin-right: 150px;
-    align-items: center;
-    justify-content: center;
-}
-.column{
-    display: block;
     width: 100%;
+    display: block;
+    margin:  0 auto;
+    
+    
+    @media (min-width:1000px){
+        display: flex;
+        margin-left: 150px;
+        margin-right: 150px; 
+        width: 100%;
+    }
+
+
+
+
 }
+
 .column-element{
-    box-sizing: border-box;
-    flex-wrap: wrap;
-    align-content: flex-start;
-    display: flex;
-    padding-top: 0px;
-    padding-right: 20px;
-    padding-bottom: 0px;
-    padding-left: 20px;
+
+    
 }
+
 /* barra que se mueve        ------------------------------------ falta que las palabras reaparescan del otro lado*/
 .containerb {
     height: 60px;
