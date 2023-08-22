@@ -315,4 +315,35 @@ nav > ul > li> a {
   .containerb .item {
     animation: move 20s linear infinite;
   }
-
+  footer {
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  .icon {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-color: gray;
+    border-radius: 50%;
+    margin-top: 200px;
+  }
+  
+  .input-container {
+    display: inline-block;
+  }
+  
+  input[type="email"] {
+    padding: 10px;
+  }
+  
+  button {
+    padding: 10px;
+    margin-bottom: 200px;
+  }
+  
+  .green-bar {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: green;
+  }
