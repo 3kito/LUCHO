@@ -1,0 +1,342 @@
+:root {
+    --fuenteHeading: 'PT Sans', sans-serif;
+    --fuenteParrafos: 'Open Sans', sans-serif;
+ 
+    --primario: #784D3C;
+    --gris: #e1e1e1;
+    --blanco: #ffffff;
+    --negro: #000000;
+    --verde: #afc126;
+}
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* 1 rem = 10px */    
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-family: var(--fuenteParrafos);
+    font-size: 1.6rem;
+    line-height: 2;
+}
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+}
+main {
+    margin-top: 150px;
+    display: block;
+}
+/* Globales */
+.contenedor {
+    width: min(90%, 120rem);
+    margin: 0 auto;
+}
+a {
+    text-decoration: none;
+}
+h1, h2, h3, h4 {
+    font-family: var(--fuenteHeading);
+    line-height: 1.2;
+}
+h1 {
+    font-size: 4.8rem;
+}
+h2 {
+    font-size: 4rem;
+}
+h3 {
+    font-size: 3.2rem;
+}
+h4 {
+    font-size: 2.8rem;
+}
+img {
+    max-width: 100%;
+}
+/* Utilidades */
+.no-margin {
+    margin: 0;
+}
+.no-padding {
+    padding: 0;
+}
+.centrar-texto {
+    text-align: center;
+}
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.header-div{
+    background-color: var(--verde);
+    padding: 5px;
+    text-align: center;
+    
+    
+}
+.header-div2{
+    background-color: blanchedalmond;
+    padding: 15px; 
+    border: solid 1px;
+    }
+    
+
+nav{
+     display: flex;
+     justify-content: space-evenly;
+     align-items: center;
+     @media (max-width: 1000px){
+        display: flex;
+        flex-direction: column;
+        
+     }
+}
+ul{
+    display: flex;
+    @media (max-width: 1000px){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+     }
+    
+}
+
+li{
+    margin: 2rem;
+    list-style: none;
+
+}
+nav > ul > li> a {
+    background: transparent;
+    color: #365F3D;
+    padding: 8px 25px;
+    border-radius: 100px;
+    border: solid 1.5px #365F3D;
+}
+.buttons-section > ul > li > a{
+    background: transparent;
+    color: #365F3D;
+    padding: 8px 25px;
+    border-radius: 100px;
+    border: solid 1.5px #365F3D;
+    justify-content: flex-end;
+    width: auto;
+
+}
+.buttons-section > ul{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    @media (max-width: 1000px){
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+}
+
+.Tienda{
+    background-color: #365F3D;
+    color: black;
+}
+#reserva-brunch{
+    background-color: #365F3D;
+    color: white;
+    
+}
+.conteiner{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.seccion-imagen{
+    background-color: blanchedalmond;
+    padding-top: 10rem;
+    padding-bottom: 5rem;
+    text-align: center;
+    @media (max-width: 1000px){
+        padding-top: 35rem;
+        padding-bottom: 4rem;
+     }
+
+}
+.description-section{
+    background-color: #365F3D;
+    height: 30rem;
+
+}
+.description-div{
+    padding-top:10rem ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+.asd{
+    color: #e1e1e1;
+}
+.dfg{
+    text-align: center;
+    width: 50%;
+    color: #e1e1e1;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 21px;
+@media (max-width: 1000px){
+    font-size: 15px;
+    line-height: 19px;
+    width: 80%;
+}
+
+}
+.maxi{
+    color:#AFC126; 
+    font-size: 20px;
+}
+.conteiner-imagen{
+    height: auto;
+    @media (max-width:1000px){
+        padding: 0px 0px 0px 0px;
+        max-width: 100%; /* La imagen no se extenderá más allá del ancho del contenedor */
+        height: auto; /* La altura se ajustará automáticamente según el ancho */    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+ 
+     }
+
+}
+.imagen{
+    border-radius: 35px 35px 35px 35px;
+    max-width: 100%;
+    height: auto;
+    display: inline-block;
+    @media (min-width: 1000px){
+        height: 40rem;
+    }
+    /* height: auto;
+  max-width: 100%;
+  border: none;
+  border-radius: 35px 35px 35px 35px;
+  box-shadow: none;
+  padding: 5rem; */
+
+
+    
+    
+    
+}
+
+ .textos{
+
+    text-align: center;
+    color: black;
+    font-family: "Roboto", Sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 21px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+
+
+    
+}
+.textos-2{
+    color: black;
+    font-family: "Roboto", Sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 21px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+ .cards-title{
+    color: #365F3D;
+    font-family: "Archive Atlantique", Sans-serif;
+    font-size: 27px;
+    font-weight: 500;
+    line-height: 26px;
+    @media (max-width:1000px){
+       text-align: center;
+
+    }
+}
+ .cards-text{
+    text-align: left;
+    color: #365F3D;
+    font-family: "Roboto", Sans-serif;
+    width: 70%;
+    @media (max-width:1000px){
+        margin: 0 auto;
+        display: block;
+        text-align: center;
+
+
+    }
+    
+ }
+.cards-section {
+    margin-top: 50px;
+    margin-bottom: 0;   
+}
+.cards-conteiner {
+    width: 100%;
+    display: block;
+    margin:  0 auto;
+    
+    
+    @media (min-width:1000px){
+        display: flex;
+        margin-left: 150px;
+        margin-right: 150px; 
+        width: 100%;
+    }
+
+
+
+
+}
+
+
+
+/* barra que se mueve        ------------------------------------ falta que las palabras reaparescan del otro lado*/
+.containerb {
+    height: 60px;
+    background-color: var(--verde);
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+  @keyframes move {
+    from { transform: translateX(0); }
+    to { transform: translateX(calc(-1*1450px)); }
+  }
+  
+  .containerb:hover .item {
+    animation-play-state: paused;
+  }
+  
+  .containerb .item {
+    animation: move 20s linear infinite;
+  }
+
