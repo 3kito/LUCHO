@@ -30,4 +30,13 @@ window.addEventListener('scroll', function(){
 
 let numero = 5 + 6
 
+
+const boton = document.querySelector('.btn-menu')
+
+boton.addEventListener('click', function(){
+    document.getElementById('sidebar').classList.toggle('active');
+});
+
+
+
  

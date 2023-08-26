@@ -86,6 +86,13 @@ img {
     background-color: blanchedalmond;
     padding: 15px; 
     border: solid 1px;
+    @media (max-width: 1000px){
+        height: 11rem;
+        border-bottom: solid 1PX;
+        padding: 15px;
+        
+    
+     }
     }
     
 
@@ -93,21 +100,28 @@ nav{
      display: flex;
      justify-content: space-evenly;
      align-items: center;
+     
      @media (max-width: 1000px){
-        display: flex;
-        flex-direction: column;
-        
+        position: fixed;
+        width: 100%;
+        left: 100%;
+
      }
 }
 ul{
     display: flex;
+    
     @media (max-width: 1000px){
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        position: fixed;
+        width: 100%;
+        left: 100%;
+        margin-top: 20rem;
+        
      }
-    
 }
 
 li{
@@ -165,7 +179,8 @@ nav > ul > li> a {
     padding-bottom: 5rem;
     text-align: center;
     @media (max-width: 1000px){
-        padding-top: 35rem;
+        
+        padding-top: 2rem;
         padding-bottom: 4rem;
      }
 
@@ -308,6 +323,65 @@ nav > ul > li> a {
 
 
 }
+.menu-bar{
+    display: none;
+    float: right;
+
+}
+/* .menu-bar2{
+    display: none;
+    float: left;
+@media (max-width:1000px){
+    display: block;
+
+    
+}
+} */
+/* .menu-bar2{ */
+
+/* @media (min-width:1000px){
+    display: block;
+
+    
+}
+} */
+
+@media (min-width:1000px){
+    .menu-bar2{
+        display: none;
+    }
+
+    
+}
+
+  
+
+@media (max-width: 1000px){
+    .menu-bar{
+        display: block;
+    }
+    #sidebar.active{
+        left: 0;
+        
+        display: flex;
+        flex-direction: column;
+        background-color: blanchedalmond;
+        border: 1px solid;
+        border-top: none;
+        
+     }
+
+
+ }
+
+ #sidebar{
+    @media (max-width: 1000px){
+        transition: all 0.3s linear;
+    }
+    
+ }
+
+
 
 
 
